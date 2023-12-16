@@ -24,7 +24,7 @@ const TestPage = ({ ...props }) => {
 	const imgItem1 = useRef<HTMLImageElement>(null)
 	const imgItem2 = useRef<HTMLImageElement>(null)
 	const imgItem3 = useRef<HTMLImageElement>(null)
-	//test
+
 
 	useEffect(() => {
 		if (homeItem1.current && homeItem2.current && homeItem3.current) {
