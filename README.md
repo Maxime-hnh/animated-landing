@@ -1,4 +1,5 @@
-# :seedling: ANIMATED LANDING PAGE
+# :seedling: ANIMATED LANDING PAGE USING GSAP ![Uploading gsap-greensock.svg…]()
+
 
 :information_source: This project is a draft. I worked on it when I was interning at Okolo.
 
