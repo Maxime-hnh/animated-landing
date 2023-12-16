@@ -1,0 +1,72 @@
+*,
+::before,
+::after {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@import 'bulma/css/bulma.css';
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@font-face {
+  font-family: 'Poppins-regular';
+  src: url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-medium';
+  src: url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-semibold';
+  src: url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins-extrabold';
+  src: url(./fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Open_sans-regular';
+  src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open_sans-semibold';
+  src: url(./fonts/Open_Sans/static/OpenSans-SemiBold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open_sans-bold';
+  src: url(./fonts/Open_Sans/static/OpenSans-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open_sans-extraBold';
+  src: url(./fonts/Open_Sans/static/OpenSans-ExtraBold.ttf) format('truetype');
+}
