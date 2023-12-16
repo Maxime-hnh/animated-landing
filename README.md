@@ -4,7 +4,7 @@
 
 # Made with : 
 1. Front :
-   - React, React-router-dom, GSAP, Bulma, React-icons, TS.
+   - React, React-router-dom, GSAP, Bulma, React-icons.
   
 ![image](https://github.com/Maxime-hnh/animated-landing/assets/118843971/f4882e27-23a6-49e6-a245-be8ff62f0100)
 
