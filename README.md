@@ -1,5 +1,7 @@
 # :seedling: ANIMATED LANDING PAGE
 
+#This project is a draft. I worked on it when I was interning at Okolo.
+
 # Made with : 
 1. Front :
    - React, React-router-dom, GSAP, Bulma, React-icons, TS.
