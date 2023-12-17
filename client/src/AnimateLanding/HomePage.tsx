@@ -28,26 +28,32 @@ const TestPage = ({ ...props }) => {
 
 	useEffect(() => {
 		if (homeItem1.current && homeItem2.current && homeItem3.current) {
+
 			setTimeout(() => {
-				gsap.set([homeItem1.current, homeItem2.current, homeItem3.current], { opacity: 0, y: +100 });
-				gsap.set([imgItem2.current, imgItem3.current], { opacity: 0 })
+				gsap.set([homeItem2.current, homeItem3.current], { opacity: 0, y: +100 });
+				gsap.set([imgItem2.current, imgItem3.current], { opacity: 0 });
 			}, 0);
 			const tl = gsap.timeline({ repeat: -1 });
 
-			tl.fromTo(homeItem1.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" })
-				.fromTo(homeItem1.current, { y: 0, opacity: 1 }, { y: +10, opacity: 0, duration: 0.4 }, 3)
-				.fromTo(imgItem1.current, { opacity: 0.8 }, { opacity: 0, duration: 2, ease: "expo.inOut" }, 2.7)
-				.fromTo(imgItem2.current, { opacity: 0, scale: 1.2 }, { opacity: 0.8, scale: 1, duration: 2, ease: "expo.inOut" }, 2.7)
+			tl.set([imgItem1.current], { opacity: 0.8, scale: 1 })
+				.set([homeItem1.current], { opacity: 1, y : 0 })
+				
+				.fromTo(homeItem1.current, { y: 0, opacity: 1 }, { y: +10, opacity: 0, duration: 0.4 }, 2)
+				.fromTo(imgItem1.current, { opacity: 0.8 }, { opacity: 0, duration: 2, ease: "expo.inOut" }, 1.7)
 
-				.fromTo(homeItem2.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" }, 3.2)
-				.fromTo(homeItem2.current, { y: 0, opacity: 1 }, { y: +10, opacity: 0, duration: 0.4 }, 6.4)
-				.fromTo(imgItem2.current, { opacity: 0.8 }, { opacity: 0, duration: 2, ease: "expo.inOut" }, 6.1)
-				.fromTo(imgItem3.current, { opacity: 0, scale: 1.2 }, { opacity: 0.8, scale: 1, duration: 2, ease: "expo.inOut" }, 6.1)
+				.fromTo(imgItem2.current, { opacity: 0, scale: 1.2 }, { opacity: 0.8, scale: 1, duration: 2, ease: "expo.inOut" }, 1.7)
+				.fromTo(homeItem2.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" }, 2.2)
+				.fromTo(homeItem2.current, { y: 0, opacity: 1 }, { y: +10, opacity: 0, duration: 0.4 }, 5.4)
+				.fromTo(imgItem2.current, { opacity: 0.8 }, { opacity: 0, duration: 2, ease: "expo.inOut" }, 5.1)
 
-				.fromTo(homeItem3.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" }, 6.6)
+				.fromTo(imgItem3.current, { opacity: 0, scale: 1.2 }, { opacity: 0.8, scale: 1, duration: 2, ease: "expo.inOut" }, 5.1)
+				.fromTo(homeItem3.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" }, 5.6)
 				.fromTo(homeItem3.current, { y: 0, opacity: 1 }, { y: +10, opacity: 0, duration: 0.4 }, 8.6)
 				.fromTo(imgItem3.current, { opacity: 0.8 }, { opacity: 0, duration: 2, ease: "expo.inOut" }, 8.3)
+
 				.fromTo(imgItem1.current, { opacity: 0, scale: 1.2 }, { opacity: 0.8, scale: 1, duration: 2, ease: "expo.inOut" }, 8.3)
+				.fromTo(homeItem1.current, { y: +100, opacity: 0 }, { y: 0, opacity: 1, duration: 2, ease: "elastic.out(1.2, 0.5)" }, 8.8)
+
 		}
 	}, []);
 
