@@ -1,12 +1,7 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
 import wine from '../assets/wine.jpg'
 import foire from '../assets/foire.jpg'
-import brocante from '../assets/brocante.jpg'
 import { TiLocation } from 'react-icons/ti'
 import '../HomePage.css'
-
-import { gsap } from "gsap";
-import { BsArrowRightCircleFill } from 'react-icons/bs';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 
 interface EventsProps {

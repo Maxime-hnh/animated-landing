@@ -36,7 +36,8 @@
 }
 
 .c-header_logo img {
-    width: 150px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 .c-header_nav {
@@ -205,6 +206,11 @@
 
 /*start events*/
 
+.c-events_carroussel {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
 .section-events-cards {
     display: flex;
     position: relative;
@@ -217,10 +223,6 @@
     width: 100%;
 }
 
-.c-events_carroussel {
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-}
 
 .c-events_card {
     height: 500px;
@@ -265,7 +267,7 @@
     font-family: 'Poppins-semibold', sans-serif;
     color: #fff;
     font-size: 1.3rem;
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(15px);
     transition: height 0.5s, border-radius 0.5s;
@@ -273,7 +275,7 @@
 
 .c-events-title:hover {
     height: 500px;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 
 }
 
@@ -290,7 +292,7 @@
     padding: 0.5rem 1rem;
     height: 100px;
     border: 1px solid #D6D6D6;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
 }
 
 .c-events_item-bottom-left {

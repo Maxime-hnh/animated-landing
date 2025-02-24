@@ -65,7 +65,7 @@ const TestPage = ({ ...props }) => {
 					<div className="o-container">
 						<nav className='c-header_nav'>
 							<div className="c-header_logo">
-								<img src={logo} alt="logo" />
+								<img src={"/my_logo_signature.png"} width={40} alt="logo" />
 							</div>
 							<ul className="c-header_nav_list">
 								<li className="c-header_nav-item"><a href="#">accueil</a></li>
@@ -97,8 +97,8 @@ const TestPage = ({ ...props }) => {
 								</div>
 								<ul className='c-home_title_list'>
 									<li className='c-home_title_item' ref={homeItem1}>simple</li>
-									<li className='c-home_title_item' ref={homeItem2}>lorem</li>
-									<li className='c-home_title_item' ref={homeItem3}>ipsum</li>
+									<li className='c-home_title_item' ref={homeItem2}>acesssible</li>
+									<li className='c-home_title_item' ref={homeItem3}>responsable</li>
 								</ul>
 							</div>
 							<button className='c-home_button button is-rounded'>Explorer la carte</button>
@@ -123,7 +123,7 @@ const TestPage = ({ ...props }) => {
 			<ConsumeLocal />
 			<Events />
 			<Trust />
-			<Features />
+			{/* <Features /> */}
 		</>
 	)
 }

@@ -23,39 +23,39 @@ const ConsumeLocal = () => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // gsap.to(".c1", {
-    //     duration: 2,
-    //     y: -150,
-    //     ease: 'none',
-    //     scrollTrigger: {
-    //         trigger: ".c1",
-    //         scrub: true,
-    //         start: "top top",
-    //         markers: true
-    //     }
-    // })
+    gsap.to(".c1", {
+        duration: 2,
+        y: -150,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: ".c1",
+            scrub: true,
+            start: "top top",
+            // markers: true
+        }
+    })
 
-    // gsap.to(".c2", {
-    //     duration: 3,
-    //     y: -75,
-    //     ease: 'none',
-    //     scrollTrigger: {
-    //         trigger: ".c2",
-    //         scrub: true,
-    //         start: "top 60%",
-    //     }
-    // })
+    gsap.to(".c2", {
+        duration: 3,
+        y: -75,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: ".c2",
+            scrub: true,
+            start: "top 60%",
+        }
+    })
 
-    // gsap.to(".c3", {
-    //     duration: 6,
-    //     y: -150,
-    //     ease: 'none',
-    //     scrollTrigger: {
-    //         trigger: ".c3",
-    //         scrub: true,
-    //         start: "top 50%",
-    //     }
-    // })
+    gsap.to(".c3", {
+        duration: 6,
+        y: -150,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: ".c3",
+            scrub: true,
+            start: "top 50%",
+        }
+    })
 
     return (
         <>
