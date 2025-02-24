@@ -97,7 +97,7 @@ const TestPage = ({ ...props }) => {
 								</div>
 								<ul className='c-home_title_list'>
 									<li className='c-home_title_item' ref={homeItem1}>simple</li>
-									<li className='c-home_title_item' ref={homeItem2}>acesssible</li>
+									<li className='c-home_title_item' ref={homeItem2}>accesssible</li>
 									<li className='c-home_title_item' ref={homeItem3}>responsable</li>
 								</ul>
 							</div>
